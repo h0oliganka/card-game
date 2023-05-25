@@ -55,10 +55,12 @@ body {
 	display: none;
 }
 
+/* наведение */
 .form_radio_btn label:hover {
-    color: #7AC100;
+    color: #1215ce;
 }
 
+/* нажатие */
 .form_radio_btn input[type=radio]:checked + label {
 	background: #ffe0a6;
 }
@@ -67,17 +69,12 @@ body {
 	display: flex;
     cursor: pointer;
     line-height: 34px;
-    border: 1px solid #999;
-    border-radius: 6px;
-    user-select: none;
-    cursor: pointer;
     border-radius: 12px;
     width: 98px;
     height: 98px;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 72px;
     color: #0080C1;
     align-items: center;
     justify-content: center;
@@ -108,4 +105,8 @@ body {
     border: none;
     margin-top: 67px;
     cursor: pointer;
+}
+
+.button__start:hover {
+    background-color: #4ff005;
 }
