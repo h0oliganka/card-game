@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "StratosSkyeng";
+    src: url("./fonts/stratosskyengweb-regular.woff2");
+}
+
+body {
+    font-family: "StratosSkyeng";
+    background: #004980;
+}
+
+.content {
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+}
+
+.content__center {
+    background-image: url(img/Group\ 18388.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 480px;
+    height: 459px;
+    border-radius: 12px;
+    margin-top: 158px;
+}
+
+.heading {
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #004980;
+    margin-bottom: 48px;
+    margin-top: 52px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.button__lvl {
+    border-radius: 12px;
+    width: 98px;
+    height: 98px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+}
+
+.button__start_main {
+    display: flex;
+    justify-content: center;
+}
+
+.button__start {
+    width: 246px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    background: #7AC100;
+    border-radius: 12px;
+    border: none;
+    margin-top: 67px;
+    cursor: pointer;
+}
