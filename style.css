@@ -47,25 +47,25 @@ body {
     gap: 24px;
 }
 
-.form_radio_btn {
+.form__radio_btn {
 	display: inline-block;
 }
 
-.form_radio_btn input[type=radio] {
+.form__radio_btn input[type=radio] {
 	display: none;
 }
 
 /* наведение */
-.form_radio_btn label:hover {
+.form__radio_btn label:hover {
     color: #1215ce;
 }
 
 /* нажатие */
-.form_radio_btn input[type=radio]:checked + label {
+.form__radio_btn input[type=radio]:checked + label {
 	background: #ffe0a6;
 }
 
-.form_radio_btn label {
+.form__radio_btn label {
 	display: flex;
     cursor: pointer;
     line-height: 34px;
