@@ -1,29 +1,25 @@
 import { renderStartPage, renderEasyPage,renderAveragePage, renderHardPage } from "./render.js";
 
 let contentElement = document.querySelector('.content');
-let gameLevel = 0;
-window.localStorage.removeItem('radio');
 
 renderStartPage({contentElement});
 
 let startMainButton = document.querySelector('.button__start');
 
-startMainButton/addEventListener('click', () => {
+startMainButton.addEventListener('click',() => {
+    let buttonRadioOne = document.getElementById('radio1');
+    let buttonRadioTwo = document.getElementById('radio2');
+    let buttonRadioThree = document.getElementById('radio3');
 
-    if (startMainButton.disabled == true) {
-        alert('Выберите сложность')
-        return;
+    if(buttonRadioOne.checked) {
+        renderEasyPage({contentElement});
     }
 
-    gameLevel = window.localStorage.getItem('radio');
+    if(buttonRadioTwo.checked) {
+        renderAveragePage({contentElement});
+    }
 
-    switch(gameLevel) {
-        case '1' : renderEasyPage({contentElement});
-        break;
-        case '2' : renderAveragePage({contentElement});
-        break;
-        case '3' : renderHardPage({contentElement});
-        default : ;
-        break;
+    if(buttonRadioThree.checked) {
+        renderHardPage({contentElement});
     }
 })
