@@ -53,7 +53,7 @@ export function renderAveragePage({ contentElement }) {
 
 export function renderHardPage({ contentElement }) {
   let contentHardPage = `
-    <div class="content__center">
+    <div class="content">
     <h1>Page 3 lvl</h1>
     </div>
     `;
