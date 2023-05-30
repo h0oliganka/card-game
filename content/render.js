@@ -1,7 +1,7 @@
 // стартовая страница
 
-export function renderStartPage({contentElement}) {
-    let contentStartPage = `
+export function renderStartPage({ contentElement }) {
+  let contentStartPage = `
     <div class="content__center">
             <h1 class="heading">Выбери <br>сложность</h1>
                 <div class="buttons">
@@ -18,45 +18,45 @@ export function renderStartPage({contentElement}) {
                         <label for="radio3">3</label>
                     </div>
                 </div>
-            <div class="button__start_main"><button class="button__start">Старт</button></div>
+            <div class="button__start"><button class="button__start_main">Старт</button></div>
         </div>
-    `
+    `;
 
-    contentElement.innerHTML = contentStartPage;
+  contentElement.innerHTML = contentStartPage;
 }
 
 // страница с легким уровнем
 
-export function renderEasyPage({contentElement}) {
-    let contentEasyPage = `
+export function renderEasyPage({ contentElement }) {
+  let contentEasyPage = `
     <div class="content__center">
     <h1>Page 1 lvl</h1>
     </div>
-    `
+    `;
 
-    contentElement.innerHTML = contentEasyPage;
+  contentElement.innerHTML = contentEasyPage;
 }
 
 // страница со средним уровнем
 
-export function renderAveragePage({contentElement}) {
-    let contentAveragePage = `
+export function renderAveragePage({ contentElement }) {
+  let contentAveragePage = `
     <div class="content__center">
     <h1>Page 2 lvl</h1>
     </div>
-    `
+    `;
 
-    contentElement.innerHTML = contentAveragePage;
+  contentElement.innerHTML = contentAveragePage;
 }
 
 // страница с тяжелым уровнем
 
-export function renderHardPage({contentElement}) {
-    let contentHardPage = `
+export function renderHardPage({ contentElement }) {
+  let contentHardPage = `
     <div class="content__center">
-    <h1>Page 2 lvl</h1>
+    <h1>Page 3 lvl</h1>
     </div>
-    `
+    `;
 
-    contentElement.innerHTML = contentHardPage;
+  contentElement.innerHTML = contentHardPage;
 }

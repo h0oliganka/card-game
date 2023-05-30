@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url("./fonts/stratosskyengweb-regular.woff2");
+}
+
+body {
+  font-family: "StratosSkyeng";
+  background: #004980;
+}
+
+.content {
+  background-repeat: no-repeat;
+  background-position: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+}
+
+.content__center {
+  background-image: url(img/Group\ 18388.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 480px;
+  height: 459px;
+  border-radius: 12px;
+  margin-top: 158px;
+}
+
+.heading {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #004980;
+  margin-bottom: 48px;
+  margin-top: 52px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.form__radio_btn {
+  display: inline-block;
+}
+
+.form__radio_btn input[type="radio"] {
+  display: none;
+}
+
+/* наведение */
+.form__radio_btn label:hover {
+  color: #1215ce;
+}
+
+/* нажатие */
+.form__radio_btn input[type="radio"]:checked + label {
+  background: #ffe0a6;
+}
+
+.form__radio_btn label {
+  display: flex;
+  cursor: pointer;
+  line-height: 34px;
+  border-radius: 12px;
+  width: 98px;
+  height: 98px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: #0080c1;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+}
+
+.button__start_main {
+  width: 246px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  background: #7ac100;
+  border-radius: 12px;
+  border: none;
+  margin-top: 67px;
+  cursor: pointer;
+}
+
+.button__start {
+  display: flex;
+  justify-content: center;
+}
+
+.button__start_main {
+  background-color: #4ff005;
+}
