@@ -9,7 +9,7 @@ let contentElement = document.querySelector(".content");
 
 renderStartPage({ contentElement });
 
-let startMainButton = document.querySelector(".button__start");
+let startMainButton = document.querySelector(".button-start");
 
 startMainButton.addEventListener("click", () => {
   let buttonRadioOne = document.getElementById("radio1");
@@ -28,3 +28,11 @@ startMainButton.addEventListener("click", () => {
     renderHardPage({ contentElement });
   }
 });
+
+// let buttonGameStart = document.getElementById(".button-start-game");
+
+// buttonGameStart.addEventListener("click", () => {
+//   if (buttonGameStart) {
+//     renderStartPage({ contentElement });
+//   }
+// });

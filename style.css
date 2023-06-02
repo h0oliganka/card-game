@@ -1,10 +1,11 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 @font-face {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng;
   src: url("./fonts/stratosskyengweb-regular.woff2");
 }
 
 body {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng;
   background: #004980;
 }
 
@@ -17,7 +18,8 @@ body {
   background-size: 100%;
 }
 
-.content__center {
+.content-center {
+  /* stylelint-disable-next-line function-url-quotes */
   background-image: url(img/Group\ 18388.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +30,7 @@ body {
 }
 
 .heading {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -47,25 +49,15 @@ body {
   gap: 24px;
 }
 
-.form__radio_btn {
+.form-radio-btn {
   display: inline-block;
 }
 
-.form__radio_btn input[type="radio"] {
+.form-radio-btn input[type="radio"] {
   display: none;
 }
 
-/* наведение */
-.form__radio_btn label:hover {
-  color: #1215ce;
-}
-
-/* нажатие */
-.form__radio_btn input[type="radio"]:checked + label {
-  background: #ffe0a6;
-}
-
-.form__radio_btn label {
+.form-radio-btn label {
   display: flex;
   cursor: pointer;
   line-height: 34px;
@@ -82,7 +74,17 @@ body {
   border: none;
 }
 
-.button__start_main {
+/* наведение */
+.form-radio-btn label:hover {
+  color: #1215ce;
+}
+
+/* нажатие */
+.form-radio-btn input[type="radio"]:checked + label {
+  background: #ffe0a6;
+}
+
+.button-start-main {
   width: 246px;
   height: 48px;
   font-style: normal;
@@ -94,7 +96,7 @@ body {
   align-items: center;
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
-  color: #ffffff;
+  color: #fff;
   background: #7ac100;
   border-radius: 12px;
   border: none;
@@ -102,11 +104,64 @@ body {
   cursor: pointer;
 }
 
-.button__start {
+.button-start {
   display: flex;
   justify-content: center;
 }
 
-.button__start_main {
-  background-color: #4ff005;
+.level-page-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 578px;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.level-page {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+.cards {
+  margin-left: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+
+.time-game {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.min-sec {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+  padding-left: 25px;
+}
+
+.time {
+  font-family: StratosSkyeng, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #fff;
+  width: 155px;
+  height: 72px;
+  margin: 0;
+}
+
+.cards-img {
+  border-radius: 4px;
 }
