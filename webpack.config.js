@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -12,7 +12,10 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
@@ -25,7 +28,10 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "static", to: "static" }],
+      patterns: [
+        { from: "img", to: "static/img" },
+        { from: "fonts", to: "static/fonts" },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
