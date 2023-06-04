@@ -9,6 +9,7 @@
     "stylelint": "^15.6.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
