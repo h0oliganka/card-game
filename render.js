@@ -1,7 +1,7 @@
 // стартовая страница
 
 export function renderStartPage({ contentElement }) {
-  let contentStartPage = `
+    let contentStartPage = `
     <div class="content-center">
             <h1 class="heading">Выбери <br>сложность</h1>
                 <div class="buttons">
@@ -20,15 +20,15 @@ export function renderStartPage({ contentElement }) {
                 </div>
             <div class="button-start"><button class="button-start-main">Старт</button></div>
         </div>
-    `;
+    `
 
-  contentElement.innerHTML = contentStartPage;
+    contentElement.innerHTML = contentStartPage
 }
 
 // страница с легким уровнем
 
 export function renderEasyPage({ contentElement }) {
-  let contentEasyPage = `
+    let contentEasyPage = `
     <div class="content level-page">
     <div class="level-page-heading">
   <div class="time-game">
@@ -41,21 +41,18 @@ export function renderEasyPage({ contentElement }) {
   <button class="button-start-main button-start-game">Начать заново</button>
 </div>
 <div class="cards">
-  <img class="cards-img" src="/img/туз пики.jpg" alt="туз пики">
-  <img class="cards-img"  src="/img/туз черви.jpg" alt="туз черви">
-  <img class="cards-img"  src="/img/туз бубны.jpg" alt="туз бубны">
-  <img class="cards-img"  src="/img/туз крести.jpg" alt="туз крести">
+  
 </div>
     </div>
-    `;
+    `
 
-  contentElement.innerHTML = contentEasyPage;
+    contentElement.innerHTML = contentEasyPage
 }
 
 // страница со средним уровнем
 
 export function renderAveragePage({ contentElement }) {
-  let contentAveragePage = `
+    let contentAveragePage = `
   <div class="content level-page">
   <div class="level-page-heading">
 <div class="time-game">
@@ -68,21 +65,18 @@ export function renderAveragePage({ contentElement }) {
 <button class="button-start-main">Начать заново</button>
 </div>
 <div class="cards">
-<img class="cards-img" src="/img/туз пики.jpg" alt="туз пики">
-<img class="cards-img" src="/img/туз черви.jpg" alt="туз черви">
-<img class="cards-img" src="/img/туз бубны.jpg" alt="туз бубны">
-<img class="cards-img" src="/img/туз крести.jpg" alt="туз крести">
+
 </div>
   </div>
-    `;
+    `
 
-  contentElement.innerHTML = contentAveragePage;
+    contentElement.innerHTML = contentAveragePage
 }
 
 // страница с тяжелым уровнем
 
 export function renderHardPage({ contentElement }) {
-  let contentHardPage = `
+    let contentHardPage = `
   <div class="content level-page">
   <div class="level-page-heading">
 <div class="time-game">
@@ -95,13 +89,10 @@ export function renderHardPage({ contentElement }) {
 <button class="button-start-main">Начать заново</button>
 </div>
 <div class="cards">
-<img class="cards-img" src="/img/туз пики.jpg" alt="туз пики">
-<img class="cards-img" src="/img/туз черви.jpg" alt="туз черви">
-<img class="cards-img" src="/img/туз бубны.jpg" alt="туз бубны">
-<img class="cards-img" src="/img/туз крести.jpg" alt="туз крести">
+
 </div>
   </div>
-    `;
+    `
 
-  contentElement.innerHTML = contentHardPage;
+    contentElement.innerHTML = contentHardPage
 }

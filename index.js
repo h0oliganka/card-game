@@ -1,33 +1,38 @@
 import {
-  renderStartPage,
-  renderEasyPage,
-  renderAveragePage,
-  renderHardPage,
-} from "./render.js";
+    renderStartPage,
+    renderEasyPage,
+    renderAveragePage,
+    renderHardPage,
+} from './render.js'
+import Deck from './deck.js'
 
-let contentElement = document.querySelector(".content");
+const deck = new Deck()
+deck.shuffle()
+console.log(deck.cards)
 
-renderStartPage({ contentElement });
+let contentElement = document.querySelector('.content')
 
-let startMainButton = document.querySelector(".button-start");
+renderStartPage({ contentElement })
 
-startMainButton.addEventListener("click", () => {
-  let buttonRadioOne = document.getElementById("radio1");
-  let buttonRadioTwo = document.getElementById("radio2");
-  let buttonRadioThree = document.getElementById("radio3");
+let startMainButton = document.querySelector('.button-start')
 
-  if (buttonRadioOne.checked) {
-    renderEasyPage({ contentElement });
-  }
+startMainButton.addEventListener('click', () => {
+    let buttonRadioOne = document.getElementById('radio1')
+    let buttonRadioTwo = document.getElementById('radio2')
+    let buttonRadioThree = document.getElementById('radio3')
 
-  if (buttonRadioTwo.checked) {
-    renderAveragePage({ contentElement });
-  }
+    if (buttonRadioOne.checked) {
+        renderEasyPage({ contentElement })
+    }
 
-  if (buttonRadioThree.checked) {
-    renderHardPage({ contentElement });
-  }
-});
+    if (buttonRadioTwo.checked) {
+        renderAveragePage({ contentElement })
+    }
+
+    if (buttonRadioThree.checked) {
+        renderHardPage({ contentElement })
+    }
+})
 
 // let buttonGameStart = document.getElementById(".button-start-game");
 
